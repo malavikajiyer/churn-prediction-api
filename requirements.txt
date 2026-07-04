@@ -10,6 +10,7 @@ charset-normalizer==3.4.7
 click==8.4.1
 cloudpickle==3.1.2
 colorama==0.4.6
+et_xmlfile==2.0.0
 fastapi==0.136.3
 gitdb==4.0.12
 GitPython==3.1.50
@@ -30,6 +31,7 @@ MarkupSafe==3.0.3
 narwhals==2.22.1
 numba==0.65.1
 numpy==2.4.6
+openpyxl==3.1.5
 packaging==26.2
 pandas==3.0.3
 pillow==12.2.0
