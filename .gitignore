@@ -17,8 +17,9 @@ __pycache__/
 Thumbs.db
 
 # Model files - too large for GitHub
-*.pkl
+# *.pkl  — allowing model files for deployment
 *.joblib
 
-# Data files - too large for GitHub  
+# Data files
 *.csv
+# *.xlsx — allowing for deployment
