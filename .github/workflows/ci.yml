@@ -1,0 +1,35 @@
+name: CI Pipeline
+
+# This workflow runs every time you push code to GitHub
+# or create a pull request — standard in every professional team
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    # Run on Ubuntu — standard for CI pipelines
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1 — Check out your code onto the CI machine
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2 — Install Python
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"
+
+      # Step 3 — Install all packages from requirements.txt
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # Step 4 — Run all 6 tests
+      # If any test fails, the pipeline fails and GitHub shows a red X
+      # This protects your main branch from broken code
+      - name: Run tests
+        run: pytest tests/test_api.py -v
