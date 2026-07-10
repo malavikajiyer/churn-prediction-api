@@ -2,7 +2,7 @@
 
 ![CI Pipeline](https://github.com/malavikajiyer/churn-prediction-api/actions/workflows/ci.yml/badge.svg)
 
-A production-grade machine learning system that predicts customer churn probability and calculates retention ROI — built with FastAPI, XGBoost, Docker, and GitHub Actions CI/CD.
+A production-grade machine learning system that predicts customer churn probability and calculates retention ROI : built with FastAPI, XGBoost, Docker, and GitHub Actions CI/CD.
 
 **[Live App](https://churn-prediction-api-wenbjjbsuwcp4q2wplszzz.streamlit.app)**
 
